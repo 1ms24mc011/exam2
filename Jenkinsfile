@@ -13,6 +13,7 @@ pipeline {
 
     stage ("run the code") {
       steps {
+        echo "Runnning..."
         sh "python3 code.py"
       }
     }

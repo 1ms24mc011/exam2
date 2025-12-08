@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  triggers{
+    POLLSCM: ("* * * * *")
+  }
 
   stages {
     stage ("check python version") {

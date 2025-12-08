@@ -5,9 +5,9 @@ pipeline {
   }
 
   stages {
-    stage ("check python version") {
+    stage ("git-connect") {
       steps {
-        sh 'python3 --version'
+        git branch:'master', url:'https://github.com/1ms24mc011/exam2/'
       }
     }
 
